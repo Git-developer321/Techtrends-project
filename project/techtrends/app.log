@@ -1,0 +1,19 @@
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:45:02] "[33mGET /7 HTTP/1.1[0m" 404 -
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:45:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:45:11] "[37mGET /1 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:45:16] "[37mGET /3 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:45:19] "[37mGET /3 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:45:22] "[37mGET /4 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:07] "[37mGET /4 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:08] "[37mGET /4 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:13] "[37mGET /2 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:15] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:16] "[37mGET /3 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:19] "[37mGET /4 HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:50:21] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Aug/2021 22:51:07] "[37mGET /3 HTTP/1.1[0m" 200 -
