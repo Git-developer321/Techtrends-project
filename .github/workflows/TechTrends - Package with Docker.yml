@@ -42,4 +42,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: heliz01/techtrends:latest
+          tags: ${{ steps.meta.outputs.tags }}
