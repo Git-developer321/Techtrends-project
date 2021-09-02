@@ -1,6 +1,7 @@
 import sqlite3
 import logging
 import sys
+import os
 
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash, g
 from werkzeug.exceptions import abort
@@ -16,6 +17,14 @@ def get_db_connection():
     connection.row_factory = sqlite3.Row
     db_connect_count += 1
     return connection
+
+# Function to check whether app could connect to db
+def connection_exists(connection):
+     try:
+        connection.cursor()
+        return True
+     except Exception as ex:
+        return False
 
 # Function to get a post using its ID
 def get_post(post_id):
@@ -87,13 +96,25 @@ def create():
 # Show the health of the application
 @app.route('/healthz')
 def healthcheck():
+  connection = get_db_connection()  
+
+  if connection_exists(connection) :
     response = app.response_class(
             response=json.dumps({"result":"OK - healthy"}),
             status=200,
             mimetype='application/json'
     )
-    
-    return response
+
+  else :
+    response = app.response_class(
+            response=json.dumps({"result":"ERROR - unhealthy"}),
+            status=500,
+            mimetype='application/json'
+    )
+   
+  connection.close()
+
+  return response
 
 # Show the metrics of the application
 @app.route('/metrics')
